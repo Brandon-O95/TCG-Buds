@@ -12,7 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
     rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/cbcd6138e4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,13 +26,29 @@
       <li><a href="#browse">Browse Cards</a></li>
       <li><a href="#sell">Sell Your Cards</a></li>
       <li><a href="#about">About Us</a></li>
-      <li><a href="#login">Login</a></li>
-      <li><a href="#signup">Sign Up</a></li>
     </ul>
-    <div class="auth-cart-container">
-      <div class="auth-img" id="person-icon">
-        <a href="#"><i class="fa-regular fa-user"></i></a>
+    <div class="login">
+      <div class="auth-cart-container">
+        <div class="auth-img" id="person-icon">
+          <img src="Assests/imgs/vecteezy_person-vector-icon-for-website-symbol-presentation_8426842.jpg"
+            alt="User Icon" class="user-icon">
+          <div class="dropdown-form" id="dropdown-form">
+            <form action="#" method="post" class="login-form">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Enter Username" required>
 
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+              <button type="submit" class="submit-btn">Log In</button>
+
+              <div class="form-links">
+                <a href="#forgot-password" class="forgot-password">Forgot Password?</a>
+                <a href="#signup" class="signup">Sign Up</a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="cart-icon">
         <a href="#cart">
@@ -46,18 +62,147 @@
         <span></span>
       </div>
     </div>
+    </div>
   </nav>
+
 
   <!-- Hero Banner Section -->
   <section class="hero">
     <div class="hero-content">
       <h1>Welcome to TCG Buds</h1>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/k0r8tk1gI0g?autoplay=1&mute=1" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
       <p>Your one-stop hub for all things trading cards!</p>
-      <a href="#shop-now" class="cta-btn">Shop Now</a>
+      <a href="#shop-now" class="cta-btn">SHOP NOW</a>
     </div>
   </section>
 
+  <section id="carousel-container">
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <!-- Placeholder Cards -->
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 1">
+          <h4>Card 1</h4>
+          <p class="card-price">$125</p>
+          <p class="card-author">Author: Carl Beans</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 2">
+          <h4>Card 2</h4>
+          <p class="card-price">$99</p>
+          <p class="card-author">Author: Tails Hotrod</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 3">
+          <h4>Card 3</h4>
+          <p class="card-price">$2</p>
+          <p class="card-author">Author: Alex Jones</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 1">
+          <h4>Card 4</h4>
+          <p class="card-price">$15</p>
+          <p class="card-author">Author: Vadim Gubin</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 2">
+          <h4>Card 5</h4>
+          <p class="card-price">$80</p>
+          <p class="card-author">Author: Yung Jay</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 3">
+          <h4>Card 6</h4>
+          <p class="card-price">$5</p>
+          <p class="card-author">Author: Thomas Hubert</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 1">
+          <h4>Card 7</h4>
+          <p class="card-price">$8</p>
+          <p class="card-author">Author: Phil King</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 2">
+          <h4>Card 8</h4>
+          <p class="card-price">$10</p>
+          <p class="card-author">Author: Alex Soro</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 3">
+          <h4>Card 9</h4>
+          <p class="card-price">$15</p>
+          <p class="card-author">Author: Relyks Smith</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card 1">
+          <h4>Card 10</h4>
+          <p class="card-price">$25</p>
+          <p class="card-author">Author: Dave Johnson</p>
+          <button class="add-to-cart" data-name="Card Name 2" data-price="15" data-author="Jane Smith">Add to
+            Cart</button>
+        </div>
+      </div>
+      <!-- Arrows -->
+      <button class="arrow left-arrow">←</button>
+      <button class="arrow right-arrow">→</button>
+    </div>
+  </section>
+
+  <div class="cart-menu">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button id="close-cart">X</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+  </div>
+
   <footer>
+    <div class="social-icons">
+      <a href="https://linktr.ee/tcgbuds" target="_blank" aria-label="Linktree">
+        <i class="fa-solid fa-link"></i>
+      </a>
+      <a href="https://www.instagram.com/tcg_buds/#" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://discord.gg/tb8ptBJFWG" target="_blank" aria-label="Discord">
+        <i class="fa-brands fa-discord"></i>
+      </a>
+      <a href="https://www.tiktok.com/@tcgbuds" target="_blank" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://www.ebay.com/usr/tcg_buds" target="_blank" aria-label="eBay">
+        <i class="fa-brands fa-ebay"></i>
+      </a>
+      <a href="https://www.youtube.com/@TCGBuds" target="_blank" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
     <p>&copy; 2024 TCG Buds</p>
   </footer>
 
